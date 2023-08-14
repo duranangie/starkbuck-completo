@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" width="100px" height="100px"></a>
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda veritatis dignissimos recusandae nam neque
+                    harum soluta sapiente ipsam odio aut doloribus
+                    voluptate nesciunt dolore, sed cum id nulla
+                    molestiae atque.
+
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/imagen1.png " class="starbucks" width="900" height="900">
+
+            </div>
+
+
+
+        </div>
+        <ul class="thumb">
+            <li><img src="img/imagen4.png" height="150" width="100" onclick="imgSlider('img/imagen4.png'); changeCircleColor('#d752b1')"  ></li>
+            <li><img src="img/imagen1.png" height="120" width="70" onclick="imgSlider('img/imagen1.png');changeCircleColor('#017143')"   ></li>
+            <li><img src="img/imagen33.webp" height="150" width="100" onclick="imgSlider('img/imagen33.webp');changeCircleColor('#eb7495')" ></li>
+        </ul>
+        <ul class="sci" >
+            <li><a href="#"><img src="img/icons8-facebook-50.png"></a></li>
+            <li><a href="#"><img src="img/icons8-instagram-50.png"></a></li>
+            <li><a href="#"><img src="img/icons8-twitter-50.png"></a></li>
+
+        </ul>
+    </section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src =anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+
+</script>
+</body>
+
+</html>
